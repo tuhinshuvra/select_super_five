@@ -199,15 +199,31 @@
 
                     <div class="card selected-inn ">
                         <div class="card-body">
-                            <h1>Selected - V</h1>
+                            <h1>Budget</h1>
                             <div class="selected">
-                                <ol>
-                                    <li>Lionel Messi</li>
-                                    <li>Runi</li>
-                                    <li>Chiristaiano Ronaldo</li>
-                                    <li>Harry Kane</li>
-                                    <li>Sadio Manee</li>
-                                </ol>
+                                <div class=" d-flex justify-content-between align-items-center mb-2">
+                                    <label for="per-player">Per Player</label>
+                                    <input id="per-player" type="number" min="0" class="player-input text-center">
+                                </div>
+
+                                <button class="player-btn mb-2">Calculate</button>
+                                <p class="d-flex justify-content-between"><span>Player Expenses</span> <strong>$
+                                        <span>5000</span></strong></p>
+
+
+                                <div class=" d-flex justify-content-between align-items-center mb-2">
+                                    <label for="manager">Manager</label>
+                                    <input id="manager" type="number" min="0" class="player-input text-center">
+                                </div>
+
+                                <div class=" d-flex justify-content-between align-items-center mb-4">
+                                    <label for="coach">Coach</label>
+                                    <input id="coach" type="number" min="0" class="player-input text-center">
+                                </div>
+
+                                <button class="player-btn mb-2">Calculate Total</button>
+                                <p class="d-flex justify-content-between"><span>Total</span> <strong>$
+                                        <span>11000</span></strong></p>
                             </div>
                         </div>
                     </div>
