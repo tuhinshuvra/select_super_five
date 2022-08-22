@@ -4,6 +4,8 @@ function addPlayer(element) {
     return playerName;
 }
 
+
+
 function countItems(listID) {
     var ol = document.getElementById(listID);
     var i = 0, itemCount = 0;
@@ -14,15 +16,21 @@ function countItems(listID) {
 document.getElementById('all-player').addEventListener('click', function (event) {
     const element = event.target;
     const playerList = document.getElementById('selected-player');
-    const li = document.createElement('li');
-    li.innerText = addPlayer(element);
 
-    playerList.appendChild(li);
+    // document.getElementById("player-btn").disabled = true;
+
+
     const playerNo = countItems('selected-player');
     if (playerNo === 5) {
-        return alert('Maximum player added!')
+        alert('Maximum player already added!')
+        return;
     }
+
+    const li = document.createElement('li');
+    playerList.appendChild(li);
+    li.innerText = addPlayer(element);
 })
+
 
 function getInputFieldValue(elementId) {
     const elementField = document.getElementById(elementId);
@@ -61,5 +69,4 @@ document.getElementById('total-btn').addEventListener('click', function () {
 
     const totalCostField = document.getElementById('total-cost');
     totalCostField.innerText = totalCost;
-
 })
