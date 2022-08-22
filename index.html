@@ -28,11 +28,11 @@
         </div>
     </header>
     <main>
-        <section id="player" class="container mt-5">
+        <section id="player" class="container player">
             <div class="row">
 
                 <div class=" player col-lg-9">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="player-left row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="card single-player ">
                                 <img src="/images/player/Lionel Messi.jpg" class="card-img-top img-fluid"
@@ -181,7 +181,7 @@
 
                 </div>
 
-                <div class="selected-five col-lg-3">
+                <div class="palyer-right col-lg-3">
                     <div class="card selected-inn ">
                         <div class="card-body">
                             <h1>Selected - V</h1>
@@ -201,12 +201,12 @@
                         <div class="card-body">
                             <h1>Budget</h1>
                             <div class="selected">
-                                <div class=" d-flex justify-content-between align-items-center mb-2">
+                                <div class=" d-flex justify-content-between align-items-center mb-4">
                                     <label for="per-player">Per Player</label>
                                     <input id="per-player" type="number" min="0" class="player-input text-center">
                                 </div>
 
-                                <button class="player-btn mb-2">Calculate</button>
+                                <button class="player-btn mb-4">Calculate</button>
                                 <p class="d-flex justify-content-between"><span>Player Expenses</span> <strong>$
                                         <span>5000</span></strong></p>
 
@@ -221,7 +221,7 @@
                                     <input id="coach" type="number" min="0" class="player-input text-center">
                                 </div>
 
-                                <button class="player-btn mb-2">Calculate Total</button>
+                                <button class="player-btn mb-4">Calculate Total</button>
                                 <p class="d-flex justify-content-between"><span>Total</span> <strong>$
                                         <span>11000</span></strong></p>
                             </div>
@@ -230,10 +230,11 @@
                 </div>
             </div>
         </section>
-
-
-
+        <hr>
     </main>
+    <footer>
+        <p>Copyright @ 2022 All Rights Reserved.</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/index.js"></script>
 </body>
