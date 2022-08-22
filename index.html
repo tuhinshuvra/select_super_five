@@ -186,12 +186,7 @@
                         <div class="card-body">
                             <h1>Selected - V</h1>
                             <div class="selected">
-                                <ol>
-                                    <li>Lionel Messi</li>
-                                    <li>Runi</li>
-                                    <li>Chiristaiano Ronaldo</li>
-                                    <li>Harry Kane</li>
-                                    <li>Sadio Manee</li>
+                                <ol id="selected-player">
                                 </ol>
                             </div>
                         </div>
@@ -203,27 +198,30 @@
                             <div class="selected">
                                 <div class=" d-flex justify-content-between align-items-center mb-4">
                                     <label for="per-player">Per Player</label>
-                                    <input id="per-player" type="number" min="0" class="player-input text-center">
+                                    <input id="per-player" type="number" min="0" class="player-input text-center"
+                                        value="1000">
                                 </div>
 
-                                <button class="cost-btn mb-4">Calculate</button>
+                                <button id="calculate-btn" class="cost-btn mb-4">Calculate</button>
                                 <p class="d-flex justify-content-between"><span>Player Expenses</span> <strong>$
-                                        <span>5000</span></strong></p>
+                                        <span id="player-cost">5000</span></strong></p>
 
 
                                 <div class=" d-flex justify-content-between align-items-center mb-2">
                                     <label for="manager">Manager</label>
-                                    <input id="manager" type="number" min="0" class="player-input text-center">
+                                    <input id="manager" type="number" min="0" class="player-input text-center"
+                                        value="2000">
                                 </div>
 
                                 <div class=" d-flex justify-content-between align-items-center mb-4">
                                     <label for="coach">Coach</label>
-                                    <input id="coach" type="number" min="0" class="player-input text-center">
+                                    <input id="coach" type="number" min="0" class="player-input text-center"
+                                        value="4000">
                                 </div>
 
-                                <button class="cost-btn mb-4">Calculate Total</button>
+                                <button id="total-btn" class="cost-btn mb-4">Calculate Total</button>
                                 <p class="d-flex justify-content-between"><span>Total</span> <strong>$
-                                        <span>11000</span></strong></p>
+                                        <span id="total-cost">11000</span></strong></p>
                             </div>
                         </div>
                     </div>
