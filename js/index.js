@@ -1,14 +1,17 @@
 let playerName;
+let isClicked;
 function addPlayer(element) {
     playerName = element.parentNode.parentNode.children[1].children[0].innerText;
+    isClicked = element;
+    // isClicked.style.backgroundColor = 'gray';
+    isClicked.disabled = true;
+
     return playerName;
 }
 
-
-
 function countItems(listID) {
-    var ol = document.getElementById(listID);
-    var i = 0, itemCount = 0;
+    let ol = document.getElementById(listID);
+    let i = 0, itemCount = 0;
     while (ol.getElementsByTagName('li')[i++]) itemCount++;
     return itemCount;
 }
@@ -70,3 +73,5 @@ document.getElementById('total-btn').addEventListener('click', function () {
     const totalCostField = document.getElementById('total-cost');
     totalCostField.innerText = totalCost;
 })
+
+
