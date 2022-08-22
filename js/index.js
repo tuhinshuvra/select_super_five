@@ -51,6 +51,9 @@ function getTextFieldValue(elementId) {
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
     const perPlayerCost = getInputFieldValue('per-player');
+    if (isNaN(perPlayerCost)) {
+        alert('Plese enter only integer number.')
+    }
     const playerNo = countItems('selected-player');
 
     const totalPlayerCost = perPlayerCost * playerNo;
@@ -61,17 +64,18 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
 document.getElementById('total-btn').addEventListener('click', function () {
     const playerCost = parseInt(getTextFieldValue('player-cost'));
-    console.log(playerCost);
+
     const coachCost = parseInt(getInputFieldValue('coach'));
-    console.log(coachCost);
+    if (isNaN(coachCost)) {
+        alert('Plese enter only integer number.')
+    }
+
     const managerCost = parseInt(getInputFieldValue('manager'));
-    console.log(managerCost);
+    if (isNaN(managerCost)) {
+        alert('Plese enter only integer number.')
+    }
 
     const totalCost = playerCost + coachCost + managerCost;
-    console.log(totalCost)
-
     const totalCostField = document.getElementById('total-cost');
     totalCostField.innerText = totalCost;
 })
-
-
